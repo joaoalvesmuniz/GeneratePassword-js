@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css"  rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-global">
+
+      <div class="container-header">
+        <span id="mostraSenha"></span>
+        <button id="copy">Copiar</button>
+      </div><!--Mostra a senha gerada e o botao de copiar-->
+
+      <div class="container-corpo">
+             <div class="form">
+                 <label for="tamanho">Tamanho Senha:</label>
+                 <input type="number" id="tamanho" value="15" min="4" max="30">
+             </div>
+             <div class="form">
+                <label for="maiuscula">Maiuscula:</label>
+                <input type="checkbox" id="maiuscula" >
+            </div>
+
+            <div class="form">
+                <label for="minuscula">Minuscula:</label>
+                <input type="checkbox" id="minuscula" >
+            </div>
+
+            <div class="form">
+                <label for="numeros">Numeros:</label>
+                <input type="checkbox" id="numeros" >
+            </div>
+
+            <div class="form">
+                <label for="simbolos">Simbolos:</label>
+                <input type="checkbox" id="simbolos" >
+            </div>
+           
+      </div>
+      <button class="gerar" id="gerar">Gerar Senha</button>
+    </div>
+
+    <script src="./index.js" defer></script>
+  </body>
+</html>
